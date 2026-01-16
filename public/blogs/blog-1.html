@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Growth Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.8;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 100%;
+    }
+
+    .back {
+      display: inline-block;
+      color: #e50914;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 30px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.2;
+    }
+
+    h1 span {
+      color: #e50914;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+      opacity: 0.95;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: #e50914;
+      margin: 50px 0;
+    }
+
+    /* subtle cinematic glow */
+    .container {
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+    <a href="javascript:history.back()" class="back">← Back</a>
+
+
+      <h1>
+        My <span>Growth Journey</span><br />
+        as a Developer
+      </h1>
+
+      <p>
+        My journey into development did not begin with confidence or clarity.
+        It started with confusion, self-doubt, and countless moments of questioning
+        whether I was good enough to pursue this path.
+      </p>
+
+      <p>
+        There were days when nothing made sense. Tutorials felt fast, errors felt endless,
+        and progress felt invisible. I spent long nights debugging simple mistakes,
+        often feeling stuck while others seemed to move ahead effortlessly.
+      </p>
+
+      <div class="divider"></div>
+
+      <p>
+        What changed everything was consistency. Even on days when motivation disappeared,
+        I showed up. I wrote code, broke things, fixed them, and repeated the cycle.
+        Slowly, confusion turned into clarity.
+      </p>
+
+      <p>
+        I learned that struggle is not failure — it is proof of growth.
+        Every bug sharpened my thinking. Every failed attempt strengthened my resilience.
+        Instead of chasing perfection, I focused on becoming better than yesterday.
+      </p>
+
+      <p>
+        Today, I carry those struggles with pride. They shaped my mindset, discipline,
+        and patience. This journey is still ongoing, but now I trust the process
+        and my ability to rise through every challenge ahead.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
