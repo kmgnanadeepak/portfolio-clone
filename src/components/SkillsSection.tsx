@@ -3,10 +3,12 @@ import { Database, Server, Atom, Cpu } from "lucide-react";
 
 const coreCS = [
   { name: "Data Structures & Algorithms", level: 85 },
+  { name: "System Design", level: 60 },
     { name: "Time & Space Complexity", level: 95 },
   { name: "Computer Networking", level: 75 },
   { name: "Operating Systems", level: 75 },
   { name: "Object-Oriented Programming (OOP)", level: 70 },
+  { name: "Distributed Systems", level: 65 },
 ];
 
 const otherSkills = [

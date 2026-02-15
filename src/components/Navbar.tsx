@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -17,6 +18,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -87,6 +89,15 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          
+          {/* Theme Toggle */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 text-muted-foreground hover:text-foreground"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
         </div>
 
         {/* Resume */}
@@ -134,6 +145,16 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+
+          {/* Mobile Theme Toggle */}
+          <button
+            onClick={toggleTheme}
+            className="flex items-center gap-3 text-lg font-medium uppercase tracking-wider transition-colors text-muted-foreground hover:text-foreground"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+          </button>
 
           <a
             href="/KM_Gnana_Deepak_Resume.pdf"
