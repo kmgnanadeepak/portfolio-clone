@@ -7,6 +7,8 @@ import {
   Coffee,
   Medal,
   Palette,
+  Sparkles,
+  Star,
 } from "lucide-react";
 
 /* ===================== DATA ===================== */
@@ -15,37 +17,46 @@ import {
 const achievements = [
   {
     icon: Trophy,
-    title: "2nd Place – Technical Quiz",
-    event: "AitheronML'25",
-    date: "22 Aug 2025",
-    credential: "/KEC_TechQuizRunner.pdf",
-    color: "from-yellow-500 to-orange-500",
-  },
-  {
-    icon: Rocket,
-    title: "Hackathon Winner",
+    title: "National-Level Hackathon Winner",
     event:
-      "Winner – 24 Hour National Level Hackathon, Sri Manakula Vinayagar Engineering College, Puducherry",
+      "Won 1st Prize (Among 70+ teams) – National Level 24-Hour Hackathon, Sri Manakula Vinayagar Engineering College, Puducherry",
     date: "19 & 20 Sep 2025",
     credential: "/Manakula_vinayagar.pdf",
     color: "from-netflix-red to-red-600",
   },
   {
+  icon: Award,
+  title: "Responsive Web UI/UX Design Champion",
+  event: "Won 1st Prize (Among 60+ teams) – Web Design Competition, Technical Fest, Kuppam Engineering College",
+  date: "10 Feb 2026",
+  credential: "/web_design_kuppam.pdf",
+  color: "from-netflix-red to-red-600",
+},
+  {
+    icon: Rocket,
+    title: "Technical Quiz Runner-Up",
+    event: "Secured 2nd Place (among 45 teams) – Technical Quiz, AItheronML’25, Kuppam Engineering College",
+    date: "22 Aug 2025",
+    credential: "/KEC_TechQuizRunner.pdf",
+    color: "from-yellow-500 to-orange-500",
+  },
+  {
     icon: Medal,
-    title: "Hackathon Participant",
-    event: "National Level Hackathon",
+    title: "Selected Participant – National Hackathon",
+    event: "National level 24-Hour Hackathon Participant – NEXATHON’25 , Dr. T. Thimmaiah Institute of Technology, Karnataka",
     date: "28 & 29 Nov 2025",
     credential: "/Dr.TTIT_hackathon.pdf",
     color: "from-purple-500 to-indigo-500",
   },
   {
-    icon: Palette,
-    title: "Logo Identification – Winner",
-    event: "Tech Fest Competition",
-    date: "22 Aug 2025",
-    credential: "/KEC_Logoidentification.pdf",
-    color: "from-green-500 to-emerald-500",
-  },
+  icon: Star,
+  title: "Logo Identification – Winner",
+  event: "Won 1st Prize – Technical Logo Identification Competition, AItheronML’25, Kuppam Engineering College",
+  date: "22 Aug 2025",
+  credential: "/KEC_Logoidentification.pdf",
+  color: "from-green-500 to-emerald-500",
+},
+
 ];
 
 /* CERTIFICATIONS (COURSES ONLY + DATES) */

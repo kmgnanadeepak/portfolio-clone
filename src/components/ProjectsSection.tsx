@@ -13,15 +13,6 @@ import {
 
 const projects = [
   {
-    title: "Safe Fall – Fall Detection & SOS Alert System",
-    description:
-      "A real-time fall detection and emergency response system designed to identify sudden falls and trigger immediate SOS alerts to family and friends.",
-    tech: ["React", "Express.js", "MongoDB", "Node.js", "Responsive Design"],
-    github: "https://github.com/kmgnanadeepak/safe-fall.git",
-    live: "https://safefall-kmgd.vercel.app/",
-    icon: Shield,
-  },
-  {
     title: "KisanSetu – Smart Agricultural Marketplace Platform",
     description:
     "KisanSetu is a multi-role digital agricultural marketplace designed to directly connect Farmers, Merchants, and Customers on a unified platform, eliminating middlemen and ensuring transparent, fair, and efficient agricultural trade. The system enables real-time product listings, smart price discovery, direct transactions, and streamlined supply-chain communication, improving profitability for farmers while providing customers with reliable farm-fresh products.",
@@ -29,6 +20,15 @@ const projects = [
     github: "https://github.com/kmgnanadeepak/KisanSetu-v2.git",
     live: "https://kisansetu-v2.vercel.app/",
     icon: Leaf,
+  },
+  {
+    title: "Safe Fall – Fall Detection & SOS Alert System",
+    description:
+      "A real-time fall detection and emergency response system designed to identify sudden falls and trigger immediate SOS alerts to family and friends.",
+    tech: ["React", "Express.js", "MongoDB", "Node.js", "Responsive Design"],
+    github: "https://github.com/kmgnanadeepak/safe-fall.git",
+    live: "https://safefall-kmgd.vercel.app/",
+    icon: Shield,
   },
 ];
 
