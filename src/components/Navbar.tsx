@@ -7,8 +7,8 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-   { href: "#achievements", label: "Achievements" },
-   { href: "#certifications", label: "Certifications" },
+  { href: "#achievements", label: "Achievements" },
+  { href: "#certifications", label: "Certifications" },
   { href: "#experience", label: "Experience" },
   { href: "#blog", label: "Blogs" },
   { href: "#contact", label: "Contact" },
@@ -51,11 +51,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled
           ? "py-3 bg-background/80 backdrop-blur-xl border-b border-border/50"
           : "py-6 bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -80,16 +79,15 @@ const Navbar = () => {
                 e.preventDefault();
                 handleNavClick(link.href);
               }}
-              className={`animated-underline text-sm font-medium uppercase tracking-wider transition-colors ${
-                activeSection === link.href.slice(1)
+              className={`animated-underline text-sm font-medium uppercase tracking-wider transition-colors ${activeSection === link.href.slice(1)
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               {link.label}
             </a>
           ))}
-          
+
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
@@ -102,7 +100,7 @@ const Navbar = () => {
 
         {/* Resume */}
         <a
-          href="/KM_Gnana_Deepak_Resume.pdf"
+          href="/KM_Gnana_Deepak_s_Resume.pdf"
           download
           className="hidden md:block btn-netflix"
         >
@@ -121,11 +119,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border/50 transition-all duration-300 ${
-          isMobileMenuOpen
+        className={`md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border/50 transition-all duration-300 ${isMobileMenuOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
+          }`}
       >
         <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
           {navLinks.map((link) => (
@@ -136,11 +133,10 @@ const Navbar = () => {
                 e.preventDefault();
                 handleNavClick(link.href);
               }}
-              className={`text-lg font-medium uppercase tracking-wider transition-colors ${
-                activeSection === link.href.slice(1)
+              className={`text-lg font-medium uppercase tracking-wider transition-colors ${activeSection === link.href.slice(1)
                   ? "text-primary"
                   : "text-muted-foreground"
-              }`}
+                }`}
             >
               {link.label}
             </a>
